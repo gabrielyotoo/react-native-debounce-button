@@ -1,9 +1,9 @@
 {
-  "name": "react-native-debounce-button",
+  "name": "react-native-throttle-button",
   "version": "0.1.0",
-  "types": "lib/esm/types/debounce-button.d.ts",
-  "module": "lib/esm/debounce-button.mjs",
-  "main": "lib/esm/debounce-button.mjs",
+  "types": "lib/esm/types/throttle-button.d.ts",
+  "module": "lib/esm/throttle-button.mjs",
+  "main": "lib/esm/throttle-button.mjs",
   "directories": {
     "example": "example",
     "test": "tests",
@@ -12,39 +12,39 @@
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "yarn clean && yarn build:esm && yarn build:cjs",
-    "build:esm": "npx tsc -p ./tsconfig.esm.json && mv ./lib/esm/debounce-button.js ./lib/esm/debounce-button.mjs",
-    "build:cjs": "npx tsc -p ./tsconfig.cjs.json && mv ./lib/cjs/debounce-button.js ./lib/cjs/debounce-button.cjs",
+    "build:esm": "npx tsc -p ./tsconfig.esm.json && mv ./lib/esm/throttle-button.js ./lib/esm/throttle-button.mjs",
+    "build:cjs": "npx tsc -p ./tsconfig.cjs.json && mv ./lib/cjs/throttle-button.js ./lib/cjs/throttle-button.cjs",
     "prepack": "yarn build",
     "test": "vitest",
     "lint": "npx eslint src/** tests/**"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gabrielyotoo/react-native-debounce-button"
+    "url": "https://github.com/gabrielyotoo/react-native-throttle-button"
   },
   "keywords": [
     "react-native",
     "button",
-    "debounce"
+    "throttle"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./lib/esm/types/debounce-button.d.ts",
-        "default": "./lib/esm/debounce-button.mjs"
+        "types": "./lib/esm/types/throttle-button.d.ts",
+        "default": "./lib/esm/throttle-button.mjs"
       },
       "require": {
-        "types": "./lib/cjs/types/debounce-button.d.ts",
-        "default": "./lib/cjs/debounce-button.js"
+        "types": "./lib/cjs/types/throttle-button.d.ts",
+        "default": "./lib/cjs/throttle-button.js"
       }
     }
   },
   "author": "Gabriel Freitas Yamamoto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gabrielyotoo/react-native-debounce-button/issues"
+    "url": "https://github.com/gabrielyotoo/react-native-throttle-button/issues"
   },
-  "homepage": "https://github.com/gabrielyotoo/react-native-debounce-button#readme",
+  "homepage": "https://github.com/gabrielyotoo/react-native-throttle-button#readme",
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.8"
